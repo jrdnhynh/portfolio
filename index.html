@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jordan Huynh</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Jordan Huynh is a web developer in Wichita, KS who turns Figma designs into fast, accessible production pages.">
+<meta property="og:title" content="Jordan Huynh, web developer">
+<meta property="og:description" content="I turn high-fidelity Figma designs into fast, accessible pages that ship.">
+<meta name="theme-color" content="#e8e8f0">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="fonts/mplus-rounded-extrabold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/silkscreen.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="3.2"/><feColorMatrix values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9"/></filter>
+  </defs>
+</svg>
+
+<!-- Loader -->
+<div class="loader" id="loader" role="dialog" aria-modal="true" aria-labelledby="loaderName" hidden>
+  <svg class="loader-art" id="loaderArt" aria-hidden="true"></svg>
+  <div class="loader-card">
+    <div class="loader-glyphs" id="loaderGlyphs" aria-hidden="true"></div>
+    <p class="loader-kana" data-kana aria-hidden="true">ジョーダン・フイン</p>
+    <p class="loader-name" id="loaderName">Jordan Huynh, web developer</p>
+    <div class="meter" id="meter">
+      <span class="px">Loading</span>
+      <span class="meter-bar" aria-hidden="true"><i id="meterFill"></i></span>
+      <span class="px" id="meterPct">000%</span>
+    </div>
+    <div class="enter" id="enter" hidden>
+      <button class="enter-btn" type="button" data-enter="sound"><span class="eb-ico" aria-hidden="true"></span>Enter with sound</button>
+      <button class="enter-btn ghost" type="button" data-enter="quiet">Enter without sound</button>
+    </div>
+  </div>
+  <p class="loader-tc px" aria-hidden="true"><b>JH</b> Mode initialized <span data-tc>00:00:00</span></p>
+  <button class="loader-skip" type="button" id="loaderRecruiter">Just need the resume? <u>Open recruiter mode</u></button>
+</div>
+
+<!-- Full site -->
+<div class="wrap" id="wrap">
+  <main class="stage" id="stage">
+    <svg class="stage-art" id="stageArt" aria-hidden="true"></svg>
+
+    <header class="topbar">
+      <a class="brand" href="#profile" aria-label="Jordan Huynh, go to profile">
+        <span class="brand-mark" id="brandMark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-name">Jordan Huynh</span>
+          <span class="brand-kana" data-kana aria-hidden="true">ジョーダン・フイン</span>
+        </span>
+      </a>
+      <div class="controls">
+        <div class="radio" id="radio">
+          <button class="radio-btn" id="radioBtn" type="button" aria-label="Play radio" aria-pressed="false"></button>
+          <span class="radio-meta">
+            <span class="px radio-station" id="radioStation">JH-FM</span>
+            <span class="radio-track"><span id="radioTrack">Off air</span></span>
+          </span>
+          <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <input class="vol" id="radioVol" type="range" min="0" max="100" step="5" value="50" aria-label="Radio volume">
+        </div>
+        <button class="px-btn" id="sfxBtn" type="button" aria-pressed="false">Sfx off</button>
+        <button class="switch" id="modeSwitch" type="button" role="switch" aria-checked="false">
+          <span class="switch-label">Recruiter mode</span>
+          <span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="menu" id="menu" aria-label="Sections"></nav>
+
+    <section class="screen" id="screen" aria-labelledby="screenTitle">
+      <div class="screen-head">
+        <span class="px" id="screenLabel">Sec 01 // Profile</span>
+        <span class="px screen-tc" aria-hidden="true">Rec <i class="rec-dot"></i> <span data-tc>00:00:00</span></span>
+        <span class="pager" id="pager">
+          <button class="px-btn dark" type="button" id="prevBtn">◀ Prev</button>
+          <span class="px" id="pagerCount">01 / 03</span>
+          <button class="px-btn dark" type="button" id="nextBtn">Next ▶</button>
+        </span>
+      </div>
+      <div class="screen-body" id="screenBody" tabindex="-1"></div>
+      <div class="screen-index" id="screenIndex"></div>
+    </section>
+
+    <div class="slate" id="slate" aria-hidden="true">
+      <span class="slate-tc px" data-tc>00:00:00</span>
+      <span class="slate-kana" id="slateKana">PROFILE</span>
+      <span class="slate-mark" id="slateMark"></span>
+      <span class="slate-sub px" id="slateSub">Entering section 01</span>
+    </div>
+
+    <footer class="foot">
+      <span class="hints px" aria-hidden="true">
+        <span><kbd>▲</kbd><kbd>▼</kbd> Sections</span>
+        <span><kbd>◀</kbd><kbd>▶</kbd> Browse</span>
+        <span><kbd>1</kbd>–<kbd>6</kbd> Jump</span>
+        <span><kbd>M</kbd> Sfx</span>
+      </span>
+      <span class="foot-right">
+        <span class="px cheat cheat-keys" title="Psst. Try typing this.">Psst <kbd>▲</kbd><kbd>▲</kbd><kbd>▼</kbd><kbd>▼</kbd><kbd>◀</kbd><kbd>▶</kbd><kbd>◀</kbd><kbd>▶</kbd><kbd>B</kbd><kbd>A</kbd></span>
+        <span class="px cheat cheat-touch">Psst: tap the logo 5 times</span>
+        <span class="px">© <span id="year">2026</span> Jordan Huynh</span>
+      </span>
+    </footer>
+  </main>
+</div>
+
+<!-- Recruiter mode -->
+<div class="recruiter" id="recruiter" hidden></div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="sr-only" id="announce" aria-live="polite"></div>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

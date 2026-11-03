@@ -1,0 +1,5 @@
+Fonts in this folder are licensed under the SIL Open Font License 1.1.
+- M PLUS Rounded 1c: Copyright 2021 The M+ FONTS Project Authors
+- Dela Gothic One: see OFL-DelaGothicOne.txt
+- Silkscreen: see OFL-Silkscreen.txt
+Files are subset to Latin + katakana for this site.
