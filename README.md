@@ -2,7 +2,7 @@
 
 My personal portfolio, designed as a nod to the Flash-era websites and early-2000s broadcast graphics I grew up on: flat pastel color, rounded "swoosh" menus, pixel-font labels and a ticking timecode.
 
-**Live site:** [jordanhuynh.com](https://jordanhuynh.com)
+**Live site:** [jordanhuynh.me](https://jordanhuynh.me)
 
 ## What's inside
 
