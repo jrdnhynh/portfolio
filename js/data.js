@@ -12,7 +12,7 @@ window.SITE = {
     title: "Digital Marketing Developer at Textron Aviation",
     location: "Wichita, KS",
     relocate: true,
-    email: "jrdnhynh@gmail.com",
+    email: "hello@jordanhuynh.me",
     linkedin: "https://www.linkedin.com/in/sjordanhuynh",
     github: "https://github.com/jrdnhynh",
     resume: "resume/Jordan-Huynh-Resume.pdf",
