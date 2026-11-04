@@ -130,7 +130,7 @@ window.SITE = {
       kind: "Product page",
       client: "Pipistrel",
       year: "2026",
-      url: "https://pipistrel-aircraft.com",
+      url: "https://www.pipistrel-aircraft.com/products/voyager/",
       stack: ["HTML", "CSS", "JavaScript"],
       color: "mint", motif: "clover",
       footnote: "ready for the EAA AirVenture debut",
